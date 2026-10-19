@@ -4,7 +4,7 @@
  * jediterm-core/jediterm-ui, published by JetBrains, no longer ship a reusable pty connector class,
  * so this small adapter is vendored here instead of pulling in the whole (unpublished) demo module.
  */
-package com.github.untalluisnava.nbclaude.terminal;
+package io.github.untalluisnava.nbclaude.terminal;
 
 import com.jediterm.core.util.TermSize;
 import com.jediterm.terminal.ProcessTtyConnector;

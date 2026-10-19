@@ -1,6 +1,6 @@
-package com.github.untalluisnava.nbclaude.actions;
+package io.github.untalluisnava.nbclaude.actions;
 
-import com.github.untalluisnava.nbclaude.ui.ClaudeTerminalTopComponent;
+import io.github.untalluisnava.nbclaude.ui.ClaudeTerminalTopComponent;
 import org.openide.awt.ActionID;
 import org.openide.awt.ActionReference;
 import org.openide.awt.ActionReferences;
@@ -24,10 +24,10 @@ import java.io.File;
  */
 @ActionID(
     category = "Edit",
-    id = "com.github.untalluisnava.nbclaude.actions.SendFileToClaudeAction")
+    id = "io.github.untalluisnava.nbclaude.actions.SendFileToClaudeAction")
 @ActionRegistration(
     displayName = "#CTL_SendFileToClaudeAction",
-    iconBase = "com/github/untalluisnava/nbclaude/resources/claude16.png")
+    iconBase = "io/github/untalluisnava/nbclaude/resources/claude16.png")
 @ActionReferences({
   @ActionReference(path = "Menu/Edit", position = 1450, separatorBefore = 1425),
   @ActionReference(path = "Toolbars/File", position = 700)

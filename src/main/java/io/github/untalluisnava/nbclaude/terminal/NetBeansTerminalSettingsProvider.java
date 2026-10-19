@@ -1,4 +1,4 @@
-package com.github.untalluisnava.nbclaude.terminal;
+package io.github.untalluisnava.nbclaude.terminal;
 
 import com.jediterm.terminal.TerminalColor;
 import com.jediterm.terminal.TextStyle;

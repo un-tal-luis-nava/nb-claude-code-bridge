@@ -1,7 +1,7 @@
-package com.github.untalluisnava.nbclaude.actions;
+package io.github.untalluisnava.nbclaude.actions;
 
-import com.github.untalluisnava.nbclaude.project.ClaudeTerminalDirectoryPreference;
-import com.github.untalluisnava.nbclaude.ui.ClaudeTerminalTopComponent;
+import io.github.untalluisnava.nbclaude.project.ClaudeTerminalDirectoryPreference;
+import io.github.untalluisnava.nbclaude.ui.ClaudeTerminalTopComponent;
 import org.netbeans.api.project.Project;
 import org.openide.DialogDisplayer;
 import org.openide.NotifyDescriptor;
@@ -41,7 +41,7 @@ import java.util.List;
  */
 @ActionID(
     category = "Window",
-    id = "com.github.untalluisnava.nbclaude.actions.OpenClaudeTerminalForProjectAction")
+    id = "io.github.untalluisnava.nbclaude.actions.OpenClaudeTerminalForProjectAction")
 @ActionRegistration(displayName = "#CTL_OpenClaudeTerminalForProjectAction", lazy = false)
 @ActionReference(path = "Projects/Actions", position = 1450, separatorBefore = 1425)
 @Messages({
@@ -58,7 +58,7 @@ public final class OpenClaudeTerminalForProjectAction extends AbstractAction
     implements ContextAwareAction {
 
   private static final String ICON_PATH =
-      "com/github/untalluisnava/nbclaude/resources/claude16.png";
+      "io/github/untalluisnava/nbclaude/resources/claude16.png";
 
   @Override
   public void actionPerformed(ActionEvent e) {

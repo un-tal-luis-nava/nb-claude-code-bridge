@@ -1,4 +1,4 @@
-package com.github.untalluisnava.nbclaude.terminal;
+package io.github.untalluisnava.nbclaude.terminal;
 
 import org.openide.cookies.OpenCookie;
 import org.openide.filesystems.FileObject;

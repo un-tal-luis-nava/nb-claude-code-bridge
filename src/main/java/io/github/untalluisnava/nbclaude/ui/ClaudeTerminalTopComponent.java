@@ -1,8 +1,8 @@
-package com.github.untalluisnava.nbclaude.ui;
+package io.github.untalluisnava.nbclaude.ui;
 
-import com.github.untalluisnava.nbclaude.terminal.ClaudeEditedFilesWatcher;
-import com.github.untalluisnava.nbclaude.terminal.NetBeansTerminalSettingsProvider;
-import com.github.untalluisnava.nbclaude.terminal.PtyProcessTtyConnector;
+import io.github.untalluisnava.nbclaude.terminal.ClaudeEditedFilesWatcher;
+import io.github.untalluisnava.nbclaude.terminal.NetBeansTerminalSettingsProvider;
+import io.github.untalluisnava.nbclaude.terminal.PtyProcessTtyConnector;
 import com.jediterm.terminal.TtyConnector;
 import com.jediterm.terminal.ui.JediTermWidget;
 import com.jediterm.terminal.ui.settings.DefaultSettingsProvider;
@@ -49,7 +49,7 @@ public final class ClaudeTerminalTopComponent extends TopComponent {
   private static final Logger LOG = Logger.getLogger(ClaudeTerminalTopComponent.class.getName());
   private static final String PREFERRED_ID = "ClaudeTerminalTopComponent";
   private static final String ICON_PATH =
-      "com/github/untalluisnava/nbclaude/resources/claude16.png";
+      "io/github/untalluisnava/nbclaude/resources/claude16.png";
 
   // Backstop for when the IDE exits without going through componentClosed() (e.g. File > Exit
   // while the panel is still open): a JVM shutdown hook still kills the process tree.

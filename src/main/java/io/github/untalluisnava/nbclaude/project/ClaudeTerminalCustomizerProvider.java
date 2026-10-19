@@ -1,4 +1,4 @@
-package com.github.untalluisnava.nbclaude.project;
+package io.github.untalluisnava.nbclaude.project;
 
 import org.netbeans.api.project.Project;
 import org.netbeans.spi.project.ui.support.ProjectCustomizer;

@@ -68,7 +68,7 @@ While the terminal is open from a project, a `WatchService` monitors **that proj
 ```sh
 mvn clean package
 ```
-This produces the module `target/nb-claude-code-bridge-1.0.0-SNAPSHOT.nbm`. To install it in NetBeans:
+This produces the module `target/nb-claude-code-bridge-<version>.nbm`. To install it in NetBeans:
 
 1. `Tools` → `Plugins` → **Downloaded** tab → **Add Plugins...**
 2. Select the generated `.nbm` file and install it.
@@ -82,7 +82,7 @@ You can also open the project in NetBeans and use **Run** to launch an IDE insta
 
 ## Code layout
 ```
-src/main/java/com/github/untalluisnava/nbclaude/
+src/main/java/io/github/untalluisnava/nbclaude/
 ├── actions/
 │   ├── OpenClaudeTerminalAction.java            # Window → Claude Code Terminal
 │   ├── OpenClaudeTerminalForProjectAction.java  # Project context menu

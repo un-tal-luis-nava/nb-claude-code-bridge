@@ -1,4 +1,4 @@
-package com.github.untalluisnava.nbclaude.project;
+package io.github.untalluisnava.nbclaude.project;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListCellRenderer;
