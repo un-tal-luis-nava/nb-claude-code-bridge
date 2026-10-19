@@ -236,9 +236,9 @@
     </scm>
     <profiles>
         <!-- Maven Central release: mvn -Prelease deploy
-             Adds the sources/javadoc jars and GPG signatures that Central requires, and uploads
-             through the Sonatype Central Portal (credentials: <server><id>central</id> in
-             ~/.m2/settings.xml). Kept out of the default build so it doesn't need GPG. -->
+        Adds the sources/javadoc jars and GPG signatures that Central requires, and uploads
+        through the Sonatype Central Portal (credentials: <server><id>central</id> in
+        ~/.m2/settings.xml). Kept out of the default build so it doesn't need GPG. -->
         <profile>
             <id>release</id>
             <build>
@@ -289,12 +289,14 @@
                     <plugin>
                         <groupId>org.sonatype.central</groupId>
                         <artifactId>central-publishing-maven-plugin</artifactId>
-                        <version>0.11.0</version>
+                        <!-- 0.11.x also bundles local-repository files (maven-metadata-local.xml,
+                             _remote.repositories) with Maven 3.10, which Central rejects. -->
+                        <version>0.12.0</version>
                         <extensions>true</extensions>
                         <configuration>
                             <publishingServerId>central</publishingServerId>
                             <!-- Upload and validate only; the release is confirmed by hand with
-                                 "Publish" at https://central.sonatype.com/publishing/deployments -->
+                            "Publish" at https://central.sonatype.com/publishing/deployments -->
                             <autoPublish>false</autoPublish>
                             <waitUntil>validated</waitUntil>
                         </configuration>
